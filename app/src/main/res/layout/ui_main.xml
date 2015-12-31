@@ -4,32 +4,38 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <TextView
+
+    <LinearLayout
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:drawableLeft="@mipmap/back"
-        android:padding="10dp"
-        android:background="#8dc44b"
-        android:text="  搜索"
+        android:background="#8dc44b">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="  LOGO"
         android:textColor="@drawable/back"
-        android:textSize="20sp"
+        android:textSize="25sp"
         android:gravity="center_vertical"
         android:id="@+id/top"
+        android:layout_marginLeft="5dp"
 
         />
     <EditText
+
         android:id="@+id/search_et_input"
         android:layout_gravity="center_vertical"
-        android:layout_margin="10dp"
         android:drawableLeft="@drawable/search_icon"
         android:drawablePadding="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/search_edittext_shape"
-        android:textSize="16sp"
+        android:textSize="10sp"
         android:imeOptions="actionSearch"
         android:inputType="text"
-        android:hint="请输入关键字."/>
+        android:hint="作者/播音/关键词"/>
+    </LinearLayout>
 
     <fragment
         android:id="@+id/fragment_cycle_viewpager_content"
